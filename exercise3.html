@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>animation</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script>
+  <script>
+    $(document).ready(function(){
+	  $("#but1").click(function(){
+		$("img").toggle();
+	  });
+	  $("#but2").click(function(){
+		$("img").slideDown(2000).fadeOut().fadeIn().slideUp(2000);
+	  });
+	  $("#but3").click(function(){
+		$("img").stop();
+	  });
+								
+   });
+  </script>
+
+  </head>
+  <body>
+    <button id="but1">hide or show</button>
+    <button id="but2">animation</button>
+    <button id="but3">stop</button>
+
+    <img src ="lena.gif"width="250"height="250"alt = "not find">
+
+  </body>
+</html>
